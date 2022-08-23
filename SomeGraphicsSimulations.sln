@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CameraRays", "CameraRays\Ca
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MinimalRayTracer", "MinimalRayTracer\MinimalRayTracer.vcxproj", "{B49315BE-93EA-4995-8443-FFEB73C6E7AB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RayTracingTriangle", "RayTracingTriangle\RayTracingTriangle.vcxproj", "{4ACBFE3A-4477-4994-B6F3-A3CDFAE1A80F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{B49315BE-93EA-4995-8443-FFEB73C6E7AB}.Release|x64.Build.0 = Release|x64
 		{B49315BE-93EA-4995-8443-FFEB73C6E7AB}.Release|x86.ActiveCfg = Release|Win32
 		{B49315BE-93EA-4995-8443-FFEB73C6E7AB}.Release|x86.Build.0 = Release|Win32
+		{4ACBFE3A-4477-4994-B6F3-A3CDFAE1A80F}.Debug|x64.ActiveCfg = Debug|x64
+		{4ACBFE3A-4477-4994-B6F3-A3CDFAE1A80F}.Debug|x64.Build.0 = Debug|x64
+		{4ACBFE3A-4477-4994-B6F3-A3CDFAE1A80F}.Debug|x86.ActiveCfg = Debug|Win32
+		{4ACBFE3A-4477-4994-B6F3-A3CDFAE1A80F}.Debug|x86.Build.0 = Debug|Win32
+		{4ACBFE3A-4477-4994-B6F3-A3CDFAE1A80F}.Release|x64.ActiveCfg = Release|x64
+		{4ACBFE3A-4477-4994-B6F3-A3CDFAE1A80F}.Release|x64.Build.0 = Release|x64
+		{4ACBFE3A-4477-4994-B6F3-A3CDFAE1A80F}.Release|x86.ActiveCfg = Release|Win32
+		{4ACBFE3A-4477-4994-B6F3-A3CDFAE1A80F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
