@@ -1,7 +1,7 @@
 #include "Utility.h"
 #include <fstream>
 #include <chrono>
-#include "cow.h"
+#include "GeoLoader.h"
 
 static const float inchToMm = 25.4;
 enum FitResolutionGate { kFill = 0, kOverscan };
@@ -132,6 +132,14 @@ int main(int argc, char** argv)
     // compute screen coordinates
     float t, b, l, r;
 
+    uint32_t ntris;
+    std::unique_ptr<Vec3f[]> vertices;
+    std::unique_ptr<Vec2f[]> st;
+    std::unique_ptr<uint32_t[]> nvertices;
+
+    loadGeoFile("input\\cow.geo", ntris, vertices, st, nvertices);
+    fprintf(stderr, "reading file ok!\n");
+
     computeScreenCoordinates(
         filmApertureWidth, filmApertureHeight,
         imageWidth, imageHeight,
@@ -164,9 +172,9 @@ int main(int argc, char** argv)
         v1Raster.z = 1 / v1Raster.z;
         v2Raster.z = 1 / v2Raster.z;
 
-        Vec2f st0 = st[stindices[i * 3]];
-        Vec2f st1 = st[stindices[i * 3 + 1]];
-        Vec2f st2 = st[stindices[i * 3 + 2]];
+        Vec2f st0 = st[i * 3];
+        Vec2f st1 = st[i * 3 + 1];
+        Vec2f st2 = st[i * 3 + 2];
 
         st0 *= v0Raster.z, st1 *= v1Raster.z, st2 *= v2Raster.z;
 

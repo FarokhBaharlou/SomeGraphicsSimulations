@@ -170,6 +170,7 @@
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\GeoLoader.h" />
     <ClInclude Include="src\cow.h" />
     <ClInclude Include="src\Utility.h" />
   </ItemGroup>

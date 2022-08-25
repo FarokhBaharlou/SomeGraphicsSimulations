@@ -26,5 +26,8 @@
     <ClInclude Include="src\cow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\GeoLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
